@@ -22,9 +22,11 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # source: https://realpython.com/intro-to-pyenv/
 
 # Install packages pyenv needs to build python
-# $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
-# libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-# libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+<<'###TERMINAL
+$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+###TERMINAL
 
 # Handy pyenv install script at https://github.com/pyenv/pyenv-installer
 # $ curl https://pyenv.run | bash
