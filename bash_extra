@@ -1,5 +1,8 @@
 # include this in ~/.bash_rc
-# source: https://www.soberkoder.com/unlimited-bash-history/
+
+##########################################
+# Make your history more useful
+# sources: https://www.soberkoder.com/unlimited-bash-history/
 
 # sometimes the default ~/.bash_history is overwritten
 export HISTFILE=~/.history
@@ -13,3 +16,19 @@ export HISTCONTROL=ignoreboth
 
 # append to history immediately
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+##########################################
+# Python pyenv stuff
+# source: https://realpython.com/intro-to-pyenv/
+
+# Install packages pyenv needs to build python
+# $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+# libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+# libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+
+# Handy pyenv install script at https://github.com/pyenv/pyenv-installer
+# $ curl https://pyenv.run | bash
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
