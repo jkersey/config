@@ -1,0 +1,15 @@
+# include this in ~/.bash_rc
+# source: https://www.soberkoder.com/unlimited-bash-history/
+
+# sometimes the default ~/.bash_history is overwritten
+export HISTFILE=~/.history
+
+# set to empty string to save the all of the histories
+export HISTFILESIZE=
+export HISTSIZE=
+
+# erase duplicates
+export HISTCONTROL=erasedups
+
+# append to history immediately
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
