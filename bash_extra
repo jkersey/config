@@ -8,8 +8,8 @@ export HISTFILE=~/.history
 export HISTFILESIZE=
 export HISTSIZE=
 
-# erase duplicates
-export HISTCONTROL=erasedups
+# ignore duplicates and commands starting with a space
+export HISTCONTROL=ignoreboth
 
 # append to history immediately
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
