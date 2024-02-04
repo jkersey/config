@@ -1,4 +1,6 @@
 # Config
 
-Configs for bash, zsh, and Emacs
+The configurations I use for bash, zsh, and Emacs (mostly).
+
+
 
