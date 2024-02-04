@@ -2,7 +2,7 @@
 
 ##########################################
 # Make your history more useful
-# sources: https://www.soberkoder.com/unlimited-bash-history/
+# source: https://www.soberkoder.com/unlimited-bash-history/
 
 # sometimes the default ~/.bash_history is overwritten
 export HISTFILE=~/.history
@@ -26,6 +26,7 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
 libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+(python3-openssl in wsl)
 ###TERMINAL
 
 # Handy pyenv install script at https://github.com/pyenv/pyenv-installer
